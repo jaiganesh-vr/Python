@@ -1,7 +1,6 @@
 import sys
 from heapq import heappop, heappush
 
-
 # A class to store a heap node
 class Node:
     def __init__(self, vertex, weight=0):
@@ -11,7 +10,6 @@ class Node:
     # Override the __lt__() function to make `Node` class work with a min-heap
     def __lt__(self, other):
         return self.weight < other.weight
-
 
 # A class to represent a graph object
 class Graph:
@@ -85,7 +83,5 @@ if __name__ == '__main__':
 
     # construct graph
     graph = Graph(edges, n)
-
     # run the Dijkstra’s algorithm from every node
-    for source in range(n):
-        findShortestPaths(graph, source, n)
+    findShortestPaths(graph, 0, n)
