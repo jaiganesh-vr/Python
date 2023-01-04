@@ -6,6 +6,5 @@ def compute():
 			if a * a + b * b == c * c:
 				return str(a * b * c)
 
-
 if __name__ == "__main__":
 	print(compute())
