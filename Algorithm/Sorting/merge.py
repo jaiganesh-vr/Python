@@ -37,7 +37,7 @@ def printList(arr):
     print()
 
 if __name__ == '__main__':
-    arr = [12, 11, 13, 5, 6, 7]
+    arr = [5,3,7,1,2]
     print("Given array is", end="\n")
     printList(arr)
     mergeSort(arr)
