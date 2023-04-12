@@ -72,11 +72,8 @@ def findShortestPaths(graph, source, n):
 
 
 if __name__ == '__main__':
-
-    # initialize edges as per the above diagram
     # (u, v, w) represent edge from vertex `u` to vertex `v` having weight `w`
-    edges = [(0, 1, 10), (0, 4, 3), (1, 2, 2), (1, 4, 4), (2, 3, 9), (3, 2, 7),
-             (4, 1, 1), (4, 2, 8), (4, 3, 2)]
+    edges = [(0,1,1),(0,2,6),(1,0,3),(1,3,6),(1,2,4),(4,3,10),(4,2,10)]
 
     # total number of nodes in the graph (labelled from 0 to 4)
     n = 5
