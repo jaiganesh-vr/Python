@@ -49,8 +49,7 @@ def floydWarshall(adjMatrix):
                         and (cost[v][k] + cost[k][u] < cost[v][u]):
                     cost[v][u] = cost[v][k] + cost[k][u]
                     path[v][u] = path[k][u]
-                print(cost, path)
-                # if diagonal elements become negative, the
+    # if diagonal elements become negative, the
     # graph contains a negative-weight cycle
     if cost[v][v] < 0:
         print('Negative-weight cycle found')
