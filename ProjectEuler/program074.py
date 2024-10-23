@@ -1,6 +1,5 @@
 import math
 
-
 def compute():
     LIMIT = 10 ** 6
     ans = sum(1 for i in range(LIMIT) if get_chain_length(i) == 60)
